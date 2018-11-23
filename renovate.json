@@ -1,4 +1,4 @@
 {
   "extends": ["@mike-north/js-lib-renovate-config"],
-  "enable": false
+  "enabled": false
 }
