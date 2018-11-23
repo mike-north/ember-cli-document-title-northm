@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-document-title',
+  name: require('./package').name,
 
   included: function(app) {
     // see: https://github.com/ember-cli/ember-cli/issues/3718
