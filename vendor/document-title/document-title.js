@@ -13,7 +13,7 @@ var routeProps = {
   // that will be the document title. The `collectTitleTokens` action
   // stops bubbling once a route is encountered that has a `title`
   // defined.
-  title: null,
+  title: null
 };
 
 /*
@@ -70,7 +70,10 @@ routeProps[mergedActionPropertyName] = {
           }
         })
         .then(function(finalTitle) {
-          let router = getOwner(self).lookup('router:main');
+          let router =
+            typeof getOwner === 'function'
+              ? getOwner(self).lookup('router:main')
+              : self.router;
 
           // Stubbable fn that sets document.title
           router.setTitle(finalTitle);
@@ -85,7 +88,7 @@ routeProps[mergedActionPropertyName] = {
       // Continue bubbling.
       return true;
     }
-  },
+  }
 };
 
 Ember.Route.reopen(routeProps);
@@ -108,7 +111,7 @@ Ember.Router.reopen({
     } else {
       document.title = title;
     }
-  },
+  }
 });
 
 function lookupFastBoot(context) {
