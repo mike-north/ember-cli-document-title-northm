@@ -1,6 +1,6 @@
 'use strict';
 /* eslint-env mocha */
-/* eslint-disable ember/no-global-jquery, ember/named-functions-in-promises ember/no-restricted-resolver-tests */
+/* eslint-disable ember/no-global-jquery, ember/named-functions-in-promises, ember/no-restricted-resolver-tests */
 
 const expect = require('chai').expect;
 const setupTest = require('ember-fastboot-addon-tests').setupTest;
