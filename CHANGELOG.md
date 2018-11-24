@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/mike-north/ember-cli-document-title-northm/compare/v1.0.0...v1.0.1) (2018-11-24)
+
+
+### Bug Fixes
+
+* ESLint configuration fixes ([42ac1b8](https://github.com/mike-north/ember-cli-document-title-northm/commit/42ac1b8))
+
 # 1.0.0 (2018-11-23)
 
 
