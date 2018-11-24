@@ -1,3 +1,20 @@
+# 1.0.0 (2018-11-23)
+
+
+### Bug Fixes
+
+* add ember-1.13 compatibility to [@scalvert](https://github.com/scalvert)'s fix ([9d899b6](https://github.com/mike-north/ember-cli-document-title-northm/commit/9d899b6))
+
+
+### chore
+
+* reset version to 0.0.0-development for semantic-release ([e8b1633](https://github.com/mike-north/ember-cli-document-title-northm/commit/e8b1633))
+
+
+### BREAKING CHANGES
+
+* 1.0 release
+
 ## master
 
 ## 0.4.0
