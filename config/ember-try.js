@@ -27,8 +27,8 @@ module.exports = function() {
           },
           npm: {
             devDependencies: {
-              "ember-cli-htmlbars": "2.0.5",
-              "ember-cli-htmlbars-inline-precompile": "1.0.5",
+              "ember-cli-htmlbars": "^2.0.0",
+              "ember-cli-htmlbars-inline-precompile": "^1.0.0",
               'ember-source': null
             }
           }
@@ -48,6 +48,8 @@ module.exports = function() {
           },
           npm: {
             devDependencies: {
+              "ember-cli-htmlbars": "^2.0.0",
+              "ember-cli-htmlbars-inline-precompile": "^1.0.0",
               'ember-source': null
             }
           }
