@@ -16,6 +16,7 @@ env:
 stages:
   - 'Tests'
   - 'Additional Tests'
+  - commitlint
   - 'Canary Tests'
   - name: 'Deploy'
     if: branch = master AND type = push
@@ -24,6 +25,7 @@ jobs:
   fail_fast: true
   allow_failures:
     - env: EMBER_TRY_SCENARIO=ember-canary
+    - name: commitlint
 
   include:
     # runs linting and tests with current locked deps
@@ -52,6 +54,13 @@ jobs:
     - env: EMBER_TRY_SCENARIO=ember-beta
     - env: EMBER_TRY_SCENARIO=ember-canary
 
+    - stage: 'commitlint'
+      name: commitlint
+      install:
+        - npm install --save-dev @commitlint/{cli,config-conventional,travis-cli}
+      script:
+        - commitlint-travis
+
     - stage: 'Canary Tests'
       script:
         - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO
@@ -75,5 +84,4 @@ before_script:
   - 'sudo chmod 4755 /opt/google/chrome/chrome-sandbox'
 
 script:
-  - commitlint-travis
   - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO
