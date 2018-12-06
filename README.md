@@ -11,7 +11,7 @@ Tested to work with Ember 1.13.13 and up.
 Install by running
 
 ```
-ember install ember-cli-document-title
+ember install ember-cli-document-title-northm
 ```
 
 ## So, how does this work?
