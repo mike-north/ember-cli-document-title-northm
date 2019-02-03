@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/mike-north/ember-cli-document-title-northm/compare/v1.0.1...v1.0.2) (2019-02-03)
+
+
+### Bug Fixes
+
+* wrap vendor file in an IIFE ([70196a6](https://github.com/mike-north/ember-cli-document-title-northm/commit/70196a6))
+
 ## [1.0.1](https://github.com/mike-north/ember-cli-document-title-northm/compare/v1.0.0...v1.0.1) (2018-11-24)
 
 
