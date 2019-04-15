@@ -71,7 +71,7 @@
             }
           })
           .then(function(finalTitle) {
-            let router =
+            var router =
               typeof getOwner === 'function'
                 ? getOwner(self).lookup('router:main')
                 : self.router;
