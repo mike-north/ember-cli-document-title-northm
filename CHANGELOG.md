@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/mike-north/ember-cli-document-title-northm/compare/v1.0.2...v1.0.3) (2019-04-15)
+
+
+### Bug Fixes
+
+* "let" declaration in dev build for older browsers ([#64](https://github.com/mike-north/ember-cli-document-title-northm/issues/64)) ([9bcdbfe](https://github.com/mike-north/ember-cli-document-title-northm/commit/9bcdbfe))
+
 ## [1.0.2](https://github.com/mike-north/ember-cli-document-title-northm/compare/v1.0.1...v1.0.2) (2019-02-03)
 
 
