@@ -95,7 +95,7 @@
   Ember.Route.reopen(routeProps);
 
   Ember.Router.reopen({
-    updateTitle: Ember.on('didTransition', function() {
+    updateTitle: Ember.on('routeDidChange', function() {
       this.send('collectTitleTokens', []);
     }),
 
